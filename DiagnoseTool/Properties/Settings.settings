@@ -17,5 +17,8 @@
     <Setting Name="TeamViewer" Type="System.String" Scope="User">
       <Value Profile="(Default)">Teamviewer</Value>
     </Setting>
+    <Setting Name="AudioSrv" Type="System.String" Scope="User">
+      <Value Profile="(Default)">AudioSrv</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

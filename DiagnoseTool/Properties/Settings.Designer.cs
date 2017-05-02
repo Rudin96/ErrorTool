@@ -82,5 +82,17 @@ namespace DiagnoseTool.Properties {
                 this["TeamViewer"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("AudioSrv")]
+        public string AudioSrv {
+            get {
+                return ((string)(this["AudioSrv"]));
+            }
+            set {
+                this["AudioSrv"] = value;
+            }
+        }
     }
 }
