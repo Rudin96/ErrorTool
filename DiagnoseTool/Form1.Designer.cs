@@ -239,7 +239,6 @@
             this.ODBCButton.TabIndex = 23;
             this.ODBCButton.Text = "Åtgärda";
             this.ODBCButton.UseVisualStyleBackColor = true;
-            this.ODBCButton.Visible = false;
             this.ODBCButton.Click += new System.EventHandler(this.ODBCButton_Click);
             // 
             // PengvinButton
@@ -646,6 +645,7 @@
             this.ODBCInstallProc.StartInfo.StandardOutputEncoding = null;
             this.ODBCInstallProc.StartInfo.UserName = "";
             this.ODBCInstallProc.SynchronizingObject = this;
+            this.ODBCInstallProc.Exited += new System.EventHandler(this.ODBCInstallProc_Exited);
             // 
             // Form1
             // 

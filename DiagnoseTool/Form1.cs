@@ -336,6 +336,7 @@ namespace DiagnoseTool
             OfficeInstallProcess.StartInfo.FileName = Application.StartupPath.ToString() + @"\InstallationFiles\OfficeInstaller.exe";
             OfficeInstallProcess.Start();
             label12.Text = "Reparerar";
+            AccessButton.Visible = false;
         }
 
         private void PengvinButton_Click(object sender, EventArgs e)
@@ -419,20 +420,40 @@ namespace DiagnoseTool
 
         private void PengvinInstallerProc4_4_Exited(object sender, EventArgs e)
         {
-            
+            label19.Visible = true;
             label19.Text = "Reparation Slutförd";
             
         }
 
         private void OfficeInstallProcess_Exited(object sender, EventArgs e)
         {
+            label20.Visible = true;
             label20.Text = "Reparation Slutförd";
         }
 
         private void ODBCButton_Click(object sender, EventArgs e)
         {
-            ODBCInstallProc.StartInfo.FileName = Application.StartupPath.ToString() + @"\InstallationFiles\msodbcsql.msi";
-            ODBCInstallProc.StartInfo.Arguments = @"/quiet /passive /qn /i IACCEPTMSODBCSQLLICENSETERMS=YES";
+            ODBCButton.Visible = false;
+            if (checkBox1.Checked)
+            {
+                ODBCInstallProc.StartInfo.FileName = Application.StartupPath.ToString() + @"\InstallationFiles\msodbcsql.msi";
+                ODBCInstallProc.StartInfo.Arguments = @"/quiet /i";
+
+            }
+            else
+            {
+                ODBCInstallProc.StartInfo.FileName = @"D:\DiagnoseTool_Repo\DiagnoseTool\DiagnoseTool\\InstallationFiles\msodbcsql.msi";
+                ODBCInstallProc.StartInfo.Arguments = @"/quiet /i";
+
+            }
+            ODBCInstallProc.StartInfo.UseShellExecute = false;
+            ODBCInstallProc.Start();
+        }
+
+        private void ODBCInstallProc_Exited(object sender, EventArgs e)
+        {
+            label18.Visible = true;
+            label18.Text = "Reparation Slutförd";
         }
     }
 }
