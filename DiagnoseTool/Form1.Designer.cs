@@ -31,6 +31,28 @@
             this.button1 = new System.Windows.Forms.Button();
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
+            this.label24 = new System.Windows.Forms.Label();
+            this.label25 = new System.Windows.Forms.Label();
+            this.ODBCButton = new System.Windows.Forms.Button();
+            this.PengvinButton = new System.Windows.Forms.Button();
+            this.AccessButton = new System.Windows.Forms.Button();
+            this.IISButton = new System.Windows.Forms.Button();
+            this.TeamViewerButton = new System.Windows.Forms.Button();
+            this.SQLServerAgentButton = new System.Windows.Forms.Button();
+            this.ReportServerButton = new System.Windows.Forms.Button();
+            this.SQLEngineButton = new System.Windows.Forms.Button();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
@@ -44,40 +66,25 @@
             this.button2 = new System.Windows.Forms.Button();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.label7 = new System.Windows.Forms.Label();
+            this.backgroundWorker2 = new System.ComponentModel.BackgroundWorker();
+            this.backgroundWorker3 = new System.ComponentModel.BackgroundWorker();
+            this.backgroundWorker4 = new System.ComponentModel.BackgroundWorker();
+            this.backgroundWorker5 = new System.ComponentModel.BackgroundWorker();
+            this.backgroundWorker6 = new System.ComponentModel.BackgroundWorker();
+            this.backgroundWorker7 = new System.ComponentModel.BackgroundWorker();
+            this.backgroundWorker8 = new System.ComponentModel.BackgroundWorker();
+            this.OfficeInstallProcess = new System.Diagnostics.Process();
+            this.PengvinInstallerProc1_4 = new System.Diagnostics.Process();
+            this.PengvinInstallerProc2_4 = new System.Diagnostics.Process();
+            this.PengvinInstallerProc3_4 = new System.Diagnostics.Process();
+            this.PengvinInstallerProc4_4 = new System.Diagnostics.Process();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.AudioService = new System.ServiceProcess.ServiceController();
             this.TeamViewerService = new System.ServiceProcess.ServiceController();
             this.SQLServerAgentService = new System.ServiceProcess.ServiceController();
             this.ReportServerService = new System.ServiceProcess.ServiceController();
             this.SQLEngineService = new System.ServiceProcess.ServiceController();
-            this.backgroundWorker2 = new System.ComponentModel.BackgroundWorker();
-            this.backgroundWorker3 = new System.ComponentModel.BackgroundWorker();
-            this.backgroundWorker4 = new System.ComponentModel.BackgroundWorker();
-            this.backgroundWorker5 = new System.ComponentModel.BackgroundWorker();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.backgroundWorker6 = new System.ComponentModel.BackgroundWorker();
-            this.backgroundWorker7 = new System.ComponentModel.BackgroundWorker();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.SQLEngineButton = new System.Windows.Forms.Button();
-            this.ReportServerButton = new System.Windows.Forms.Button();
-            this.SQLServerAgentButton = new System.Windows.Forms.Button();
-            this.TeamViewerButton = new System.Windows.Forms.Button();
-            this.IISButton = new System.Windows.Forms.Button();
-            this.AccessButton = new System.Windows.Forms.Button();
-            this.PengvinButton = new System.Windows.Forms.Button();
-            this.ODBCButton = new System.Windows.Forms.Button();
-            this.backgroundWorker8 = new System.ComponentModel.BackgroundWorker();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
-            this.label22 = new System.Windows.Forms.Label();
-            this.label23 = new System.Windows.Forms.Label();
-            this.label24 = new System.Windows.Forms.Label();
-            this.label25 = new System.Windows.Forms.Label();
+            this.ODBCInstallProc = new System.Diagnostics.Process();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -143,6 +150,224 @@
             this.groupBox1.Text = "Status:";
             this.groupBox1.Visible = false;
             this.groupBox1.VisibleChanged += new System.EventHandler(this.progressBar1_VisibleChanged);
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Location = new System.Drawing.Point(266, 203);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(71, 13);
+            this.label18.TabIndex = 31;
+            this.label18.Text = "Undersöker...";
+            this.label18.Visible = false;
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Location = new System.Drawing.Point(266, 178);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(71, 13);
+            this.label19.TabIndex = 30;
+            this.label19.Text = "Undersöker...";
+            this.label19.Visible = false;
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Location = new System.Drawing.Point(266, 153);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(71, 13);
+            this.label20.TabIndex = 29;
+            this.label20.Text = "Undersöker...";
+            this.label20.Visible = false;
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Location = new System.Drawing.Point(266, 128);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(71, 13);
+            this.label21.TabIndex = 28;
+            this.label21.Text = "Undersöker...";
+            this.label21.Visible = false;
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Location = new System.Drawing.Point(266, 102);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(71, 13);
+            this.label22.TabIndex = 27;
+            this.label22.Text = "Undersöker...";
+            this.label22.Visible = false;
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Location = new System.Drawing.Point(266, 77);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(71, 13);
+            this.label23.TabIndex = 26;
+            this.label23.Text = "Undersöker...";
+            this.label23.Visible = false;
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Location = new System.Drawing.Point(266, 26);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(71, 13);
+            this.label24.TabIndex = 25;
+            this.label24.Text = "Undersöker...";
+            this.label24.Visible = false;
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Location = new System.Drawing.Point(266, 51);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(71, 13);
+            this.label25.TabIndex = 24;
+            this.label25.Text = "Undersöker...";
+            this.label25.Visible = false;
+            // 
+            // ODBCButton
+            // 
+            this.ODBCButton.Location = new System.Drawing.Point(185, 196);
+            this.ODBCButton.Name = "ODBCButton";
+            this.ODBCButton.Size = new System.Drawing.Size(75, 26);
+            this.ODBCButton.TabIndex = 23;
+            this.ODBCButton.Text = "Åtgärda";
+            this.ODBCButton.UseVisualStyleBackColor = true;
+            this.ODBCButton.Visible = false;
+            this.ODBCButton.Click += new System.EventHandler(this.ODBCButton_Click);
+            // 
+            // PengvinButton
+            // 
+            this.PengvinButton.Location = new System.Drawing.Point(185, 171);
+            this.PengvinButton.Name = "PengvinButton";
+            this.PengvinButton.Size = new System.Drawing.Size(75, 26);
+            this.PengvinButton.TabIndex = 22;
+            this.PengvinButton.Text = "Åtgärda";
+            this.PengvinButton.UseVisualStyleBackColor = true;
+            this.PengvinButton.Visible = false;
+            this.PengvinButton.Click += new System.EventHandler(this.PengvinButton_Click);
+            // 
+            // AccessButton
+            // 
+            this.AccessButton.Location = new System.Drawing.Point(185, 146);
+            this.AccessButton.Name = "AccessButton";
+            this.AccessButton.Size = new System.Drawing.Size(75, 26);
+            this.AccessButton.TabIndex = 21;
+            this.AccessButton.Text = "Åtgärda";
+            this.AccessButton.UseVisualStyleBackColor = true;
+            this.AccessButton.Visible = false;
+            this.AccessButton.Click += new System.EventHandler(this.AccessButton_Click);
+            // 
+            // IISButton
+            // 
+            this.IISButton.Location = new System.Drawing.Point(185, 121);
+            this.IISButton.Name = "IISButton";
+            this.IISButton.Size = new System.Drawing.Size(75, 26);
+            this.IISButton.TabIndex = 20;
+            this.IISButton.Text = "Åtgärda";
+            this.IISButton.UseVisualStyleBackColor = true;
+            this.IISButton.Visible = false;
+            this.IISButton.Click += new System.EventHandler(this.IISButton_Click);
+            // 
+            // TeamViewerButton
+            // 
+            this.TeamViewerButton.Location = new System.Drawing.Point(185, 95);
+            this.TeamViewerButton.Name = "TeamViewerButton";
+            this.TeamViewerButton.Size = new System.Drawing.Size(75, 26);
+            this.TeamViewerButton.TabIndex = 19;
+            this.TeamViewerButton.Text = "Åtgärda";
+            this.TeamViewerButton.UseVisualStyleBackColor = true;
+            this.TeamViewerButton.Visible = false;
+            // 
+            // SQLServerAgentButton
+            // 
+            this.SQLServerAgentButton.Location = new System.Drawing.Point(185, 70);
+            this.SQLServerAgentButton.Name = "SQLServerAgentButton";
+            this.SQLServerAgentButton.Size = new System.Drawing.Size(75, 26);
+            this.SQLServerAgentButton.TabIndex = 18;
+            this.SQLServerAgentButton.Text = "Åtgärda";
+            this.SQLServerAgentButton.UseVisualStyleBackColor = true;
+            this.SQLServerAgentButton.Visible = false;
+            // 
+            // ReportServerButton
+            // 
+            this.ReportServerButton.Location = new System.Drawing.Point(185, 44);
+            this.ReportServerButton.Name = "ReportServerButton";
+            this.ReportServerButton.Size = new System.Drawing.Size(75, 26);
+            this.ReportServerButton.TabIndex = 17;
+            this.ReportServerButton.Text = "Åtgärda";
+            this.ReportServerButton.UseVisualStyleBackColor = true;
+            this.ReportServerButton.Visible = false;
+            // 
+            // SQLEngineButton
+            // 
+            this.SQLEngineButton.Location = new System.Drawing.Point(185, 19);
+            this.SQLEngineButton.Name = "SQLEngineButton";
+            this.SQLEngineButton.Size = new System.Drawing.Size(75, 26);
+            this.SQLEngineButton.TabIndex = 16;
+            this.SQLEngineButton.Text = "Åtgärda";
+            this.SQLEngineButton.UseVisualStyleBackColor = true;
+            this.SQLEngineButton.Visible = false;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(108, 203);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(71, 13);
+            this.label16.TabIndex = 15;
+            this.label16.Text = "Undersöker...";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(13, 203);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(86, 13);
+            this.label17.TabIndex = 14;
+            this.label17.Text = "ODBC Driver 13:";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(108, 178);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(71, 13);
+            this.label14.TabIndex = 13;
+            this.label14.Text = "Undersöker...";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(13, 178);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(49, 13);
+            this.label15.TabIndex = 12;
+            this.label15.Text = "Pengvin:";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(108, 153);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(71, 13);
+            this.label12.TabIndex = 11;
+            this.label12.Text = "Undersöker...";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(13, 153);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(45, 13);
+            this.label13.TabIndex = 10;
+            this.label13.Text = "Access:";
             // 
             // label10
             // 
@@ -262,31 +487,6 @@
             this.label7.TabIndex = 4;
             this.label7.Visible = false;
             // 
-            // AudioService
-            // 
-            this.AudioService.MachineName = global::DiagnoseTool.Properties.Settings.Default.Server3;
-            this.AudioService.ServiceName = global::DiagnoseTool.Properties.Settings.Default.AudioSrv;
-            // 
-            // TeamViewerService
-            // 
-            this.TeamViewerService.MachineName = global::DiagnoseTool.Properties.Settings.Default.Server3;
-            this.TeamViewerService.ServiceName = global::DiagnoseTool.Properties.Settings.Default.TeamViewer;
-            // 
-            // SQLServerAgentService
-            // 
-            this.SQLServerAgentService.MachineName = global::DiagnoseTool.Properties.Settings.Default.Server3;
-            this.SQLServerAgentService.ServiceName = global::DiagnoseTool.Properties.Settings.Default.SQLAgent;
-            // 
-            // ReportServerService
-            // 
-            this.ReportServerService.MachineName = global::DiagnoseTool.Properties.Settings.Default.Server3;
-            this.ReportServerService.ServiceName = global::DiagnoseTool.Properties.Settings.Default.ReportServer;
-            // 
-            // SQLEngineService
-            // 
-            this.SQLEngineService.MachineName = global::DiagnoseTool.Properties.Settings.Default.Server3;
-            this.SQLEngineService.ServiceName = global::DiagnoseTool.Properties.Settings.Default.SQLServerEngine;
-            // 
             // backgroundWorker2
             // 
             this.backgroundWorker2.WorkerReportsProgress = true;
@@ -315,24 +515,6 @@
             this.backgroundWorker5.DoWork += new System.ComponentModel.DoWorkEventHandler(this.backgroundWorker5_DoWork);
             this.backgroundWorker5.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(this.backgroundWorker5_RunWorkerCompleted);
             // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(108, 153);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(71, 13);
-            this.label12.TabIndex = 11;
-            this.label12.Text = "Undersöker...";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(13, 153);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(45, 13);
-            this.label13.TabIndex = 10;
-            this.label13.Text = "Access:";
-            // 
             // backgroundWorker6
             // 
             this.backgroundWorker6.WorkerReportsProgress = true;
@@ -347,123 +529,6 @@
             this.backgroundWorker7.DoWork += new System.ComponentModel.DoWorkEventHandler(this.backgroundWorker7_DoWork);
             this.backgroundWorker7.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(this.backgroundWorker7_RunWorkerCompleted);
             // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(13, 178);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(49, 13);
-            this.label15.TabIndex = 12;
-            this.label15.Text = "Pengvin:";
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(108, 178);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(71, 13);
-            this.label14.TabIndex = 13;
-            this.label14.Text = "Undersöker...";
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(108, 203);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(71, 13);
-            this.label16.TabIndex = 15;
-            this.label16.Text = "Undersöker...";
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(13, 203);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(86, 13);
-            this.label17.TabIndex = 14;
-            this.label17.Text = "ODBC Driver 13:";
-            // 
-            // SQLEngineButton
-            // 
-            this.SQLEngineButton.Location = new System.Drawing.Point(185, 19);
-            this.SQLEngineButton.Name = "SQLEngineButton";
-            this.SQLEngineButton.Size = new System.Drawing.Size(75, 26);
-            this.SQLEngineButton.TabIndex = 16;
-            this.SQLEngineButton.Text = "Åtgärda";
-            this.SQLEngineButton.UseVisualStyleBackColor = true;
-            this.SQLEngineButton.Visible = false;
-            // 
-            // ReportServerButton
-            // 
-            this.ReportServerButton.Location = new System.Drawing.Point(185, 44);
-            this.ReportServerButton.Name = "ReportServerButton";
-            this.ReportServerButton.Size = new System.Drawing.Size(75, 26);
-            this.ReportServerButton.TabIndex = 17;
-            this.ReportServerButton.Text = "Åtgärda";
-            this.ReportServerButton.UseVisualStyleBackColor = true;
-            this.ReportServerButton.Visible = false;
-            // 
-            // SQLServerAgentButton
-            // 
-            this.SQLServerAgentButton.Location = new System.Drawing.Point(185, 70);
-            this.SQLServerAgentButton.Name = "SQLServerAgentButton";
-            this.SQLServerAgentButton.Size = new System.Drawing.Size(75, 26);
-            this.SQLServerAgentButton.TabIndex = 18;
-            this.SQLServerAgentButton.Text = "Åtgärda";
-            this.SQLServerAgentButton.UseVisualStyleBackColor = true;
-            this.SQLServerAgentButton.Visible = false;
-            // 
-            // TeamViewerButton
-            // 
-            this.TeamViewerButton.Location = new System.Drawing.Point(185, 95);
-            this.TeamViewerButton.Name = "TeamViewerButton";
-            this.TeamViewerButton.Size = new System.Drawing.Size(75, 26);
-            this.TeamViewerButton.TabIndex = 19;
-            this.TeamViewerButton.Text = "Åtgärda";
-            this.TeamViewerButton.UseVisualStyleBackColor = true;
-            this.TeamViewerButton.Visible = false;
-            // 
-            // IISButton
-            // 
-            this.IISButton.Location = new System.Drawing.Point(185, 121);
-            this.IISButton.Name = "IISButton";
-            this.IISButton.Size = new System.Drawing.Size(75, 26);
-            this.IISButton.TabIndex = 20;
-            this.IISButton.Text = "Åtgärda";
-            this.IISButton.UseVisualStyleBackColor = true;
-            this.IISButton.Visible = false;
-            this.IISButton.Click += new System.EventHandler(this.IISButton_Click);
-            // 
-            // AccessButton
-            // 
-            this.AccessButton.Location = new System.Drawing.Point(185, 146);
-            this.AccessButton.Name = "AccessButton";
-            this.AccessButton.Size = new System.Drawing.Size(75, 26);
-            this.AccessButton.TabIndex = 21;
-            this.AccessButton.Text = "Åtgärda";
-            this.AccessButton.UseVisualStyleBackColor = true;
-            this.AccessButton.Visible = false;
-            // 
-            // PengvinButton
-            // 
-            this.PengvinButton.Location = new System.Drawing.Point(185, 171);
-            this.PengvinButton.Name = "PengvinButton";
-            this.PengvinButton.Size = new System.Drawing.Size(75, 26);
-            this.PengvinButton.TabIndex = 22;
-            this.PengvinButton.Text = "Åtgärda";
-            this.PengvinButton.UseVisualStyleBackColor = true;
-            this.PengvinButton.Visible = false;
-            // 
-            // ODBCButton
-            // 
-            this.ODBCButton.Location = new System.Drawing.Point(185, 196);
-            this.ODBCButton.Name = "ODBCButton";
-            this.ODBCButton.Size = new System.Drawing.Size(75, 26);
-            this.ODBCButton.TabIndex = 23;
-            this.ODBCButton.Text = "Åtgärda";
-            this.ODBCButton.UseVisualStyleBackColor = true;
-            this.ODBCButton.Visible = false;
-            // 
             // backgroundWorker8
             // 
             this.backgroundWorker8.WorkerReportsProgress = true;
@@ -471,91 +536,123 @@
             this.backgroundWorker8.DoWork += new System.ComponentModel.DoWorkEventHandler(this.backgroundWorker8_DoWork);
             this.backgroundWorker8.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(this.backgroundWorker8_RunWorkerCompleted);
             // 
-            // label18
+            // OfficeInstallProcess
             // 
-            this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(266, 203);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(71, 13);
-            this.label18.TabIndex = 31;
-            this.label18.Text = "Undersöker...";
-            this.label18.Visible = false;
+            this.OfficeInstallProcess.EnableRaisingEvents = true;
+            this.OfficeInstallProcess.StartInfo.CreateNoWindow = true;
+            this.OfficeInstallProcess.StartInfo.Domain = "";
+            this.OfficeInstallProcess.StartInfo.ErrorDialog = true;
+            this.OfficeInstallProcess.StartInfo.FileName = "\\...\\InstallationFiles\\OfficeInstaller.exe";
+            this.OfficeInstallProcess.StartInfo.LoadUserProfile = false;
+            this.OfficeInstallProcess.StartInfo.Password = null;
+            this.OfficeInstallProcess.StartInfo.StandardErrorEncoding = null;
+            this.OfficeInstallProcess.StartInfo.StandardOutputEncoding = null;
+            this.OfficeInstallProcess.StartInfo.UserName = "";
+            this.OfficeInstallProcess.StartInfo.WindowStyle = System.Diagnostics.ProcessWindowStyle.Hidden;
+            this.OfficeInstallProcess.SynchronizingObject = this;
+            this.OfficeInstallProcess.Exited += new System.EventHandler(this.OfficeInstallProcess_Exited);
             // 
-            // label19
+            // PengvinInstallerProc1_4
             // 
-            this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(266, 178);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(71, 13);
-            this.label19.TabIndex = 30;
-            this.label19.Text = "Undersöker...";
-            this.label19.Visible = false;
+            this.PengvinInstallerProc1_4.EnableRaisingEvents = true;
+            this.PengvinInstallerProc1_4.StartInfo.Domain = "";
+            this.PengvinInstallerProc1_4.StartInfo.FileName = "PengvinArbetsplatsInstaller.exe";
+            this.PengvinInstallerProc1_4.StartInfo.LoadUserProfile = false;
+            this.PengvinInstallerProc1_4.StartInfo.Password = null;
+            this.PengvinInstallerProc1_4.StartInfo.StandardErrorEncoding = null;
+            this.PengvinInstallerProc1_4.StartInfo.StandardOutputEncoding = null;
+            this.PengvinInstallerProc1_4.StartInfo.UserName = "";
+            this.PengvinInstallerProc1_4.SynchronizingObject = this;
+            this.PengvinInstallerProc1_4.Exited += new System.EventHandler(this.PengvinInstallerProc1_4_Exited);
             // 
-            // label20
+            // PengvinInstallerProc2_4
             // 
-            this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(266, 153);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(71, 13);
-            this.label20.TabIndex = 29;
-            this.label20.Text = "Undersöker...";
-            this.label20.Visible = false;
+            this.PengvinInstallerProc2_4.EnableRaisingEvents = true;
+            this.PengvinInstallerProc2_4.StartInfo.Domain = "";
+            this.PengvinInstallerProc2_4.StartInfo.LoadUserProfile = false;
+            this.PengvinInstallerProc2_4.StartInfo.Password = null;
+            this.PengvinInstallerProc2_4.StartInfo.StandardErrorEncoding = null;
+            this.PengvinInstallerProc2_4.StartInfo.StandardOutputEncoding = null;
+            this.PengvinInstallerProc2_4.StartInfo.UserName = "";
+            this.PengvinInstallerProc2_4.SynchronizingObject = this;
+            this.PengvinInstallerProc2_4.Exited += new System.EventHandler(this.PengvinInstallerProc2_4_Exited);
             // 
-            // label21
+            // PengvinInstallerProc3_4
             // 
-            this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(266, 128);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(71, 13);
-            this.label21.TabIndex = 28;
-            this.label21.Text = "Undersöker...";
-            this.label21.Visible = false;
+            this.PengvinInstallerProc3_4.EnableRaisingEvents = true;
+            this.PengvinInstallerProc3_4.StartInfo.Domain = "";
+            this.PengvinInstallerProc3_4.StartInfo.LoadUserProfile = false;
+            this.PengvinInstallerProc3_4.StartInfo.Password = null;
+            this.PengvinInstallerProc3_4.StartInfo.StandardErrorEncoding = null;
+            this.PengvinInstallerProc3_4.StartInfo.StandardOutputEncoding = null;
+            this.PengvinInstallerProc3_4.StartInfo.UserName = "";
+            this.PengvinInstallerProc3_4.SynchronizingObject = this;
+            this.PengvinInstallerProc3_4.Exited += new System.EventHandler(this.PengvinInstallerProc3_4_Exited);
             // 
-            // label22
+            // PengvinInstallerProc4_4
             // 
-            this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(266, 102);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(71, 13);
-            this.label22.TabIndex = 27;
-            this.label22.Text = "Undersöker...";
-            this.label22.Visible = false;
+            this.PengvinInstallerProc4_4.EnableRaisingEvents = true;
+            this.PengvinInstallerProc4_4.StartInfo.Domain = "";
+            this.PengvinInstallerProc4_4.StartInfo.LoadUserProfile = false;
+            this.PengvinInstallerProc4_4.StartInfo.Password = null;
+            this.PengvinInstallerProc4_4.StartInfo.StandardErrorEncoding = null;
+            this.PengvinInstallerProc4_4.StartInfo.StandardOutputEncoding = null;
+            this.PengvinInstallerProc4_4.StartInfo.UserName = "";
+            this.PengvinInstallerProc4_4.SynchronizingObject = this;
+            this.PengvinInstallerProc4_4.Exited += new System.EventHandler(this.PengvinInstallerProc4_4_Exited);
             // 
-            // label23
+            // checkBox1
             // 
-            this.label23.AutoSize = true;
-            this.label23.Location = new System.Drawing.Point(266, 77);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(71, 13);
-            this.label23.TabIndex = 26;
-            this.label23.Text = "Undersöker...";
-            this.label23.Visible = false;
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(31, 229);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(105, 17);
+            this.checkBox1.TabIndex = 5;
+            this.checkBox1.Text = "Utvecklarknapp:";
+            this.checkBox1.UseVisualStyleBackColor = true;
             // 
-            // label24
+            // AudioService
             // 
-            this.label24.AutoSize = true;
-            this.label24.Location = new System.Drawing.Point(266, 26);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(71, 13);
-            this.label24.TabIndex = 25;
-            this.label24.Text = "Undersöker...";
-            this.label24.Visible = false;
+            this.AudioService.MachineName = "192.168.0.117";
+            this.AudioService.ServiceName = "AudioSrv";
             // 
-            // label25
+            // TeamViewerService
             // 
-            this.label25.AutoSize = true;
-            this.label25.Location = new System.Drawing.Point(266, 51);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(71, 13);
-            this.label25.TabIndex = 24;
-            this.label25.Text = "Undersöker...";
-            this.label25.Visible = false;
+            this.TeamViewerService.MachineName = "192.168.0.117";
+            this.TeamViewerService.ServiceName = "Teamviewer";
+            // 
+            // SQLServerAgentService
+            // 
+            this.SQLServerAgentService.MachineName = "192.168.0.117";
+            this.SQLServerAgentService.ServiceName = "SQLServerAgent";
+            // 
+            // ReportServerService
+            // 
+            this.ReportServerService.MachineName = "192.168.0.117";
+            this.ReportServerService.ServiceName = "ReportServer";
+            // 
+            // SQLEngineService
+            // 
+            this.SQLEngineService.MachineName = "192.168.0.117";
+            this.SQLEngineService.ServiceName = "MSSQLSERVER";
+            // 
+            // ODBCInstallProc
+            // 
+            this.ODBCInstallProc.EnableRaisingEvents = true;
+            this.ODBCInstallProc.StartInfo.Domain = "";
+            this.ODBCInstallProc.StartInfo.LoadUserProfile = false;
+            this.ODBCInstallProc.StartInfo.Password = null;
+            this.ODBCInstallProc.StartInfo.StandardErrorEncoding = null;
+            this.ODBCInstallProc.StartInfo.StandardOutputEncoding = null;
+            this.ODBCInstallProc.StartInfo.UserName = "";
+            this.ODBCInstallProc.SynchronizingObject = this;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(750, 386);
+            this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.groupBox1);
@@ -625,6 +722,13 @@
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.Label label25;
+        private System.Diagnostics.Process OfficeInstallProcess;
+        private System.Diagnostics.Process PengvinInstallerProc1_4;
+        private System.Diagnostics.Process PengvinInstallerProc2_4;
+        private System.Diagnostics.Process PengvinInstallerProc3_4;
+        private System.Diagnostics.Process PengvinInstallerProc4_4;
+        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Diagnostics.Process ODBCInstallProc;
     }
 }
 

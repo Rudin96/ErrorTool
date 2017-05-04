@@ -26,8 +26,8 @@
     <ProductName>Felsökningsverktyg</ProductName>
     <PublisherName>Sandbergs Järn</PublisherName>
     <MinimumRequiredVersion>1.0.0.0</MinimumRequiredVersion>
-    <ApplicationRevision>13</ApplicationRevision>
-    <ApplicationVersion>0.2.4.%2a</ApplicationVersion>
+    <ApplicationRevision>5</ApplicationRevision>
+    <ApplicationVersion>0.5.3.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <CreateDesktopShortcut>true</CreateDesktopShortcut>
     <PublishWizardCompleted>true</PublishWizardCompleted>
@@ -65,6 +65,17 @@
   <PropertyGroup>
     <SignManifests>true</SignManifests>
   </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -99,8 +110,17 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="app.manifest" />
     <None Include="DiagnoseTool_TemporaryKey.pfx" />
+    <Content Include="InstallationFiles\InstallPVE_InteropControl.msi" />
+    <Content Include="InstallationFiles\msodbcsql.msi" />
+    <Content Include="InstallationFiles\msxml6_x86.msi" />
+    <Content Include="InstallationFiles\PengVin BAXI Controller Client.msi" />
+    <Content Include="InstallationFiles\PengVin.Library10.dllSetup.msi" />
+    <Content Include="InstallationFiles\Pengvin.Scan.dllSetup.msi" />
+    <Content Include="InstallationFiles\setupvars.ini" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -125,6 +145,21 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="InstallationFiles\install.xml" />
+    <Content Include="InstallationFiles\InstallPVE_InteropControl.msi.txt" />
+    <Content Include="InstallationFiles\PengvinArbetsplatsInstaller.exe" />
+    <Content Include="InstallationFiles\PengVin BAXI Controller Client.msi.txt" />
+    <Content Include="InstallationFiles\Pengvin.Library10.dllSetup.msi.txt" />
+    <Content Include="InstallationFiles\Pengvin.ReportInstaller2008.exe" />
+    <Content Include="InstallationFiles\Pengvin.Scan.dllSetup.msi.txt" />
+    <Content Include="InstallationFiles\regsp.exe" />
+    <Content Include="InstallationFiles\OfficeInstaller.exe" />
+    <Content Include="InstallationFiles\setup.exe" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="InstallationFiles\Office365Pro\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -255,7 +255,7 @@ namespace DiagnoseTool
             else
             {
 
-                PengvinInstalledText = "Ej installerat eller skadad installation";
+                PengvinInstalledText = "Ej installerat";
 
             }
         }
@@ -329,6 +329,110 @@ namespace DiagnoseTool
                 label21.Text = "Kan inte starta tjänst";
                 IISButton.Visible = true;
             }
+        }
+
+        private void AccessButton_Click(object sender, EventArgs e)
+        {
+            OfficeInstallProcess.StartInfo.FileName = Application.StartupPath.ToString() + @"\InstallationFiles\OfficeInstaller.exe";
+            OfficeInstallProcess.Start();
+            label12.Text = "Reparerar";
+        }
+
+        private void PengvinButton_Click(object sender, EventArgs e)
+        {
+
+            if (checkBox1.Checked)
+            {
+                PengvinInstallerProc1_4.StartInfo.FileName = Application.StartupPath.ToString() + @"\InstallationFiles\PengvinArbetsplatsInstaller.exe";
+                PengvinInstallerProc1_4.StartInfo.Arguments = @"/S" + Application.StartupPath.ToString() + @"\setupvars.ini";
+
+            } else
+            {
+                PengvinInstallerProc1_4.StartInfo.FileName = @"D:\DiagnoseTool_Repo\DiagnoseTool\DiagnoseTool\InstallationFiles\PengvinArbetsplatsInstaller.exe";
+                PengvinInstallerProc1_4.StartInfo.Arguments = @"/S" + @"\setupvars.ini";
+
+            }
+            
+            PengvinInstallerProc1_4.Start();
+            PengvinButton.Visible = false;
+            label14.Text = "Reparerar";
+            label19.Visible = true;
+            label19.Text = "Steg 1 av 4...";
+        }
+
+        private void PengvinInstallerProc1_4_Exited(object sender, EventArgs e)
+        {
+            if (checkBox1.Checked)
+            {
+                PengvinInstallerProc2_4.StartInfo.FileName = Application.StartupPath.ToString() + @"\InstallationFiles\InstallPVE_InteropControl.msi";
+                PengvinInstallerProc2_4.StartInfo.Arguments = @"/q";
+
+            }
+            else
+            {
+                PengvinInstallerProc2_4.StartInfo.FileName = @"D:\DiagnoseTool_Repo\DiagnoseTool\DiagnoseTool\InstallationFiles\InstallPVE_InteropControl.msi";
+                PengvinInstallerProc2_4.StartInfo.Arguments = @"/q";
+
+            }
+            
+            PengvinInstallerProc2_4.Start();
+            label19.Text = "Steg 2 av 4...";
+        }
+
+        private void PengvinInstallerProc2_4_Exited(object sender, EventArgs e)
+        {
+            if (checkBox1.Checked)
+            {
+                PengvinInstallerProc3_4.StartInfo.FileName = Application.StartupPath.ToString() + @"\InstallationFiles\PengVin BAXI Controller Client.msi";
+                PengvinInstallerProc3_4.StartInfo.Arguments = @"/q";
+
+            }
+            else
+            {
+                PengvinInstallerProc3_4.StartInfo.FileName = @"D:\DiagnoseTool_Repo\DiagnoseTool\DiagnoseTool\InstallationFiles\PengVin BAXI Controller Client.msi";
+                PengvinInstallerProc3_4.StartInfo.Arguments = @"/q";
+
+            }
+            
+            PengvinInstallerProc3_4.Start();
+            label19.Text = "Steg 3 av 4...";
+        }
+
+        private void PengvinInstallerProc3_4_Exited(object sender, EventArgs e)
+        {
+            if (checkBox1.Checked)
+            {
+                PengvinInstallerProc4_4.StartInfo.FileName = Application.StartupPath.ToString() + @"\InstallationFiles\PengVin.Library10.dllSetup.msi";
+                PengvinInstallerProc4_4.StartInfo.Arguments = @"/q";
+
+            }
+            else
+            {
+                PengvinInstallerProc4_4.StartInfo.FileName = @"D:\DiagnoseTool_Repo\DiagnoseTool\DiagnoseTool\InstallationFiles\PengVin.Library10.dllSetup.msi";
+                PengvinInstallerProc4_4.StartInfo.Arguments = @"/q";
+
+            }
+            
+            PengvinInstallerProc4_4.Start();
+            label19.Text = "Steg 4 av 4...";
+        }
+
+        private void PengvinInstallerProc4_4_Exited(object sender, EventArgs e)
+        {
+            
+            label19.Text = "Reparation Slutförd";
+            
+        }
+
+        private void OfficeInstallProcess_Exited(object sender, EventArgs e)
+        {
+            label20.Text = "Reparation Slutförd";
+        }
+
+        private void ODBCButton_Click(object sender, EventArgs e)
+        {
+            ODBCInstallProc.StartInfo.FileName = Application.StartupPath.ToString() + @"\InstallationFiles\msodbcsql.msi";
+            ODBCInstallProc.StartInfo.Arguments = @"/quiet /passive /qn /i IACCEPTMSODBCSQLLICENSETERMS=YES";
         }
     }
 }
