@@ -74,10 +74,10 @@
             this.backgroundWorker7 = new System.ComponentModel.BackgroundWorker();
             this.backgroundWorker8 = new System.ComponentModel.BackgroundWorker();
             this.OfficeInstallProcess = new System.Diagnostics.Process();
-            this.PengvinInstallerProc1_4 = new System.Diagnostics.Process();
-            this.PengvinInstallerProc2_4 = new System.Diagnostics.Process();
-            this.PengvinInstallerProc3_4 = new System.Diagnostics.Process();
-            this.PengvinInstallerProc4_4 = new System.Diagnostics.Process();
+            this.PengvinInstallerProc1_5 = new System.Diagnostics.Process();
+            this.PengvinInstallerProc2_5 = new System.Diagnostics.Process();
+            this.PengvinInstallerProc3_5 = new System.Diagnostics.Process();
+            this.PengvinInstallerProc4_5 = new System.Diagnostics.Process();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.AudioService = new System.ServiceProcess.ServiceController();
             this.TeamViewerService = new System.ServiceProcess.ServiceController();
@@ -85,6 +85,7 @@
             this.ReportServerService = new System.ServiceProcess.ServiceController();
             this.SQLEngineService = new System.ServiceProcess.ServiceController();
             this.ODBCInstallProc = new System.Diagnostics.Process();
+            this.PengvinInstallerProc5_5 = new System.Diagnostics.Process();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -239,6 +240,7 @@
             this.ODBCButton.TabIndex = 23;
             this.ODBCButton.Text = "Åtgärda";
             this.ODBCButton.UseVisualStyleBackColor = true;
+            this.ODBCButton.Visible = false;
             this.ODBCButton.Click += new System.EventHandler(this.ODBCButton_Click);
             // 
             // PengvinButton
@@ -551,64 +553,68 @@
             this.OfficeInstallProcess.SynchronizingObject = this;
             this.OfficeInstallProcess.Exited += new System.EventHandler(this.OfficeInstallProcess_Exited);
             // 
-            // PengvinInstallerProc1_4
+            // PengvinInstallerProc1_5
             // 
-            this.PengvinInstallerProc1_4.EnableRaisingEvents = true;
-            this.PengvinInstallerProc1_4.StartInfo.Domain = "";
-            this.PengvinInstallerProc1_4.StartInfo.FileName = "PengvinArbetsplatsInstaller.exe";
-            this.PengvinInstallerProc1_4.StartInfo.LoadUserProfile = false;
-            this.PengvinInstallerProc1_4.StartInfo.Password = null;
-            this.PengvinInstallerProc1_4.StartInfo.StandardErrorEncoding = null;
-            this.PengvinInstallerProc1_4.StartInfo.StandardOutputEncoding = null;
-            this.PengvinInstallerProc1_4.StartInfo.UserName = "";
-            this.PengvinInstallerProc1_4.SynchronizingObject = this;
-            this.PengvinInstallerProc1_4.Exited += new System.EventHandler(this.PengvinInstallerProc1_4_Exited);
+            this.PengvinInstallerProc1_5.EnableRaisingEvents = true;
+            this.PengvinInstallerProc1_5.StartInfo.Domain = "";
+            this.PengvinInstallerProc1_5.StartInfo.FileName = "PengvinArbetsplatsInstaller.exe";
+            this.PengvinInstallerProc1_5.StartInfo.LoadUserProfile = false;
+            this.PengvinInstallerProc1_5.StartInfo.Password = null;
+            this.PengvinInstallerProc1_5.StartInfo.StandardErrorEncoding = null;
+            this.PengvinInstallerProc1_5.StartInfo.StandardOutputEncoding = null;
+            this.PengvinInstallerProc1_5.StartInfo.UserName = "";
+            this.PengvinInstallerProc1_5.SynchronizingObject = this;
+            this.PengvinInstallerProc1_5.Exited += new System.EventHandler(this.PengvinInstallerProc1_4_Exited);
             // 
-            // PengvinInstallerProc2_4
+            // PengvinInstallerProc2_5
             // 
-            this.PengvinInstallerProc2_4.EnableRaisingEvents = true;
-            this.PengvinInstallerProc2_4.StartInfo.Domain = "";
-            this.PengvinInstallerProc2_4.StartInfo.LoadUserProfile = false;
-            this.PengvinInstallerProc2_4.StartInfo.Password = null;
-            this.PengvinInstallerProc2_4.StartInfo.StandardErrorEncoding = null;
-            this.PengvinInstallerProc2_4.StartInfo.StandardOutputEncoding = null;
-            this.PengvinInstallerProc2_4.StartInfo.UserName = "";
-            this.PengvinInstallerProc2_4.SynchronizingObject = this;
-            this.PengvinInstallerProc2_4.Exited += new System.EventHandler(this.PengvinInstallerProc2_4_Exited);
+            this.PengvinInstallerProc2_5.EnableRaisingEvents = true;
+            this.PengvinInstallerProc2_5.StartInfo.Domain = "";
+            this.PengvinInstallerProc2_5.StartInfo.LoadUserProfile = false;
+            this.PengvinInstallerProc2_5.StartInfo.Password = null;
+            this.PengvinInstallerProc2_5.StartInfo.StandardErrorEncoding = null;
+            this.PengvinInstallerProc2_5.StartInfo.StandardOutputEncoding = null;
+            this.PengvinInstallerProc2_5.StartInfo.UserName = "";
+            this.PengvinInstallerProc2_5.SynchronizingObject = this;
+            this.PengvinInstallerProc2_5.Exited += new System.EventHandler(this.PengvinInstallerProc2_4_Exited);
             // 
-            // PengvinInstallerProc3_4
+            // PengvinInstallerProc3_5
             // 
-            this.PengvinInstallerProc3_4.EnableRaisingEvents = true;
-            this.PengvinInstallerProc3_4.StartInfo.Domain = "";
-            this.PengvinInstallerProc3_4.StartInfo.LoadUserProfile = false;
-            this.PengvinInstallerProc3_4.StartInfo.Password = null;
-            this.PengvinInstallerProc3_4.StartInfo.StandardErrorEncoding = null;
-            this.PengvinInstallerProc3_4.StartInfo.StandardOutputEncoding = null;
-            this.PengvinInstallerProc3_4.StartInfo.UserName = "";
-            this.PengvinInstallerProc3_4.SynchronizingObject = this;
-            this.PengvinInstallerProc3_4.Exited += new System.EventHandler(this.PengvinInstallerProc3_4_Exited);
+            this.PengvinInstallerProc3_5.EnableRaisingEvents = true;
+            this.PengvinInstallerProc3_5.StartInfo.Domain = "";
+            this.PengvinInstallerProc3_5.StartInfo.LoadUserProfile = false;
+            this.PengvinInstallerProc3_5.StartInfo.Password = null;
+            this.PengvinInstallerProc3_5.StartInfo.StandardErrorEncoding = null;
+            this.PengvinInstallerProc3_5.StartInfo.StandardOutputEncoding = null;
+            this.PengvinInstallerProc3_5.StartInfo.UserName = "";
+            this.PengvinInstallerProc3_5.SynchronizingObject = this;
+            this.PengvinInstallerProc3_5.Exited += new System.EventHandler(this.PengvinInstallerProc3_4_Exited);
             // 
-            // PengvinInstallerProc4_4
+            // PengvinInstallerProc4_5
             // 
-            this.PengvinInstallerProc4_4.EnableRaisingEvents = true;
-            this.PengvinInstallerProc4_4.StartInfo.Domain = "";
-            this.PengvinInstallerProc4_4.StartInfo.LoadUserProfile = false;
-            this.PengvinInstallerProc4_4.StartInfo.Password = null;
-            this.PengvinInstallerProc4_4.StartInfo.StandardErrorEncoding = null;
-            this.PengvinInstallerProc4_4.StartInfo.StandardOutputEncoding = null;
-            this.PengvinInstallerProc4_4.StartInfo.UserName = "";
-            this.PengvinInstallerProc4_4.SynchronizingObject = this;
-            this.PengvinInstallerProc4_4.Exited += new System.EventHandler(this.PengvinInstallerProc4_4_Exited);
+            this.PengvinInstallerProc4_5.EnableRaisingEvents = true;
+            this.PengvinInstallerProc4_5.StartInfo.Domain = "";
+            this.PengvinInstallerProc4_5.StartInfo.LoadUserProfile = false;
+            this.PengvinInstallerProc4_5.StartInfo.Password = null;
+            this.PengvinInstallerProc4_5.StartInfo.StandardErrorEncoding = null;
+            this.PengvinInstallerProc4_5.StartInfo.StandardOutputEncoding = null;
+            this.PengvinInstallerProc4_5.StartInfo.UserName = "";
+            this.PengvinInstallerProc4_5.SynchronizingObject = this;
+            this.PengvinInstallerProc4_5.Exited += new System.EventHandler(this.PengvinInstallerProc4_4_Exited);
             // 
             // checkBox1
             // 
             this.checkBox1.AutoSize = true;
+            this.checkBox1.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.checkBox1.Checked = true;
+            this.checkBox1.CheckState = System.Windows.Forms.CheckState.Checked;
             this.checkBox1.Location = new System.Drawing.Point(31, 229);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(105, 17);
             this.checkBox1.TabIndex = 5;
             this.checkBox1.Text = "Utvecklarknapp:";
             this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBox1.Visible = false;
             // 
             // AudioService
             // 
@@ -646,6 +652,18 @@
             this.ODBCInstallProc.StartInfo.UserName = "";
             this.ODBCInstallProc.SynchronizingObject = this;
             this.ODBCInstallProc.Exited += new System.EventHandler(this.ODBCInstallProc_Exited);
+            // 
+            // PengvinInstallerProc5_5
+            // 
+            this.PengvinInstallerProc5_5.EnableRaisingEvents = true;
+            this.PengvinInstallerProc5_5.StartInfo.Domain = "";
+            this.PengvinInstallerProc5_5.StartInfo.LoadUserProfile = false;
+            this.PengvinInstallerProc5_5.StartInfo.Password = null;
+            this.PengvinInstallerProc5_5.StartInfo.StandardErrorEncoding = null;
+            this.PengvinInstallerProc5_5.StartInfo.StandardOutputEncoding = null;
+            this.PengvinInstallerProc5_5.StartInfo.UserName = "";
+            this.PengvinInstallerProc5_5.SynchronizingObject = this;
+            this.PengvinInstallerProc5_5.Exited += new System.EventHandler(this.PengvinInstallerProc5_5_Exited);
             // 
             // Form1
             // 
@@ -723,12 +741,13 @@
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.Label label25;
         private System.Diagnostics.Process OfficeInstallProcess;
-        private System.Diagnostics.Process PengvinInstallerProc1_4;
-        private System.Diagnostics.Process PengvinInstallerProc2_4;
-        private System.Diagnostics.Process PengvinInstallerProc3_4;
-        private System.Diagnostics.Process PengvinInstallerProc4_4;
+        private System.Diagnostics.Process PengvinInstallerProc1_5;
+        private System.Diagnostics.Process PengvinInstallerProc2_5;
+        private System.Diagnostics.Process PengvinInstallerProc3_5;
+        private System.Diagnostics.Process PengvinInstallerProc4_5;
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Diagnostics.Process ODBCInstallProc;
+        private System.Diagnostics.Process PengvinInstallerProc5_5;
     }
 }
 

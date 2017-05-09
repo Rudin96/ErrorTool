@@ -78,6 +78,7 @@ namespace DiagnoseTool
         private void button2_Click(object sender, EventArgs e)
         {
             backgroundWorker1.CancelAsync();
+            
         }
 
         private void backgroundWorker1_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
@@ -344,84 +345,98 @@ namespace DiagnoseTool
 
             if (checkBox1.Checked)
             {
-                PengvinInstallerProc1_4.StartInfo.FileName = Application.StartupPath.ToString() + @"\InstallationFiles\PengvinArbetsplatsInstaller.exe";
-                PengvinInstallerProc1_4.StartInfo.Arguments = @"/S" + Application.StartupPath.ToString() + @"\setupvars.ini";
+                PengvinInstallerProc1_5.StartInfo.FileName = Application.StartupPath.ToString() + @"\InstallationFiles\PengvinArbetsplatsInstaller.exe";
+                PengvinInstallerProc1_5.StartInfo.Arguments = @"/S" + Application.StartupPath.ToString() + @"\setupvars.ini";
 
             } else
             {
-                PengvinInstallerProc1_4.StartInfo.FileName = @"D:\DiagnoseTool_Repo\DiagnoseTool\DiagnoseTool\InstallationFiles\PengvinArbetsplatsInstaller.exe";
-                PengvinInstallerProc1_4.StartInfo.Arguments = @"/S" + @"\setupvars.ini";
+                PengvinInstallerProc1_5.StartInfo.FileName = @"D:\DiagnoseTool_Repo\DiagnoseTool\DiagnoseTool\InstallationFiles\PengvinArbetsplatsInstaller.exe";
+                PengvinInstallerProc1_5.StartInfo.Arguments = @"/S" + @"\setupvars.ini";
 
             }
             
-            PengvinInstallerProc1_4.Start();
+            PengvinInstallerProc1_5.Start();
             PengvinButton.Visible = false;
             label14.Text = "Reparerar";
             label19.Visible = true;
-            label19.Text = "Steg 1 av 4...";
+            label19.Text = "Steg 1 av 5...";
         }
 
         private void PengvinInstallerProc1_4_Exited(object sender, EventArgs e)
         {
             if (checkBox1.Checked)
             {
-                PengvinInstallerProc2_4.StartInfo.FileName = Application.StartupPath.ToString() + @"\InstallationFiles\InstallPVE_InteropControl.msi";
-                PengvinInstallerProc2_4.StartInfo.Arguments = @"/q";
+                PengvinInstallerProc2_5.StartInfo.FileName = Application.StartupPath.ToString() + @"\InstallationFiles\InstallPVE_InteropControl.msi";
+                PengvinInstallerProc2_5.StartInfo.Arguments = @"/q";
 
             }
             else
             {
-                PengvinInstallerProc2_4.StartInfo.FileName = @"D:\DiagnoseTool_Repo\DiagnoseTool\DiagnoseTool\InstallationFiles\InstallPVE_InteropControl.msi";
-                PengvinInstallerProc2_4.StartInfo.Arguments = @"/q";
+                PengvinInstallerProc2_5.StartInfo.FileName = @"D:\DiagnoseTool_Repo\DiagnoseTool\DiagnoseTool\InstallationFiles\InstallPVE_InteropControl.msi";
+                PengvinInstallerProc2_5.StartInfo.Arguments = @"/q";
 
             }
             
-            PengvinInstallerProc2_4.Start();
-            label19.Text = "Steg 2 av 4...";
+            PengvinInstallerProc2_5.Start();
+            label19.Text = "Steg 2 av 5...";
         }
 
         private void PengvinInstallerProc2_4_Exited(object sender, EventArgs e)
         {
             if (checkBox1.Checked)
             {
-                PengvinInstallerProc3_4.StartInfo.FileName = Application.StartupPath.ToString() + @"\InstallationFiles\PengVin BAXI Controller Client.msi";
-                PengvinInstallerProc3_4.StartInfo.Arguments = @"/q";
+                PengvinInstallerProc3_5.StartInfo.FileName = Application.StartupPath.ToString() + @"\InstallationFiles\PengVin BAXI Controller Client.msi";
+                PengvinInstallerProc3_5.StartInfo.Arguments = @"/q";
 
             }
             else
             {
-                PengvinInstallerProc3_4.StartInfo.FileName = @"D:\DiagnoseTool_Repo\DiagnoseTool\DiagnoseTool\InstallationFiles\PengVin BAXI Controller Client.msi";
-                PengvinInstallerProc3_4.StartInfo.Arguments = @"/q";
+                PengvinInstallerProc3_5.StartInfo.FileName = @"D:\DiagnoseTool_Repo\DiagnoseTool\DiagnoseTool\InstallationFiles\PengVin BAXI Controller Client.msi";
+                PengvinInstallerProc3_5.StartInfo.Arguments = @"/q";
 
             }
             
-            PengvinInstallerProc3_4.Start();
-            label19.Text = "Steg 3 av 4...";
+            PengvinInstallerProc3_5.Start();
+            label19.Text = "Steg 3 av 5...";
         }
 
         private void PengvinInstallerProc3_4_Exited(object sender, EventArgs e)
         {
             if (checkBox1.Checked)
             {
-                PengvinInstallerProc4_4.StartInfo.FileName = Application.StartupPath.ToString() + @"\InstallationFiles\PengVin.Library10.dllSetup.msi";
-                PengvinInstallerProc4_4.StartInfo.Arguments = @"/q";
+                PengvinInstallerProc4_5.StartInfo.FileName = Application.StartupPath.ToString() + @"\InstallationFiles\PengVin.Library10.dllSetup.msi";
+                PengvinInstallerProc4_5.StartInfo.Arguments = @"/q";
 
             }
             else
             {
-                PengvinInstallerProc4_4.StartInfo.FileName = @"D:\DiagnoseTool_Repo\DiagnoseTool\DiagnoseTool\InstallationFiles\PengVin.Library10.dllSetup.msi";
-                PengvinInstallerProc4_4.StartInfo.Arguments = @"/q";
+                PengvinInstallerProc4_5.StartInfo.FileName = @"D:\DiagnoseTool_Repo\DiagnoseTool\DiagnoseTool\InstallationFiles\PengVin.Library10.dllSetup.msi";
+                PengvinInstallerProc4_5.StartInfo.Arguments = @"/q";
 
             }
             
-            PengvinInstallerProc4_4.Start();
-            label19.Text = "Steg 4 av 4...";
+            PengvinInstallerProc4_5.Start();
+            label19.Text = "Steg 4 av 5...";
         }
 
         private void PengvinInstallerProc4_4_Exited(object sender, EventArgs e)
         {
+            if (checkBox1.Checked)
+            {
+                PengvinInstallerProc5_5.StartInfo.FileName = Application.StartupPath.ToString() + @"\InstallationFiles\Pengvin.Scan.dllSetup.msi";
+                PengvinInstallerProc5_5.StartInfo.Arguments = @"/q";
+
+            }
+            else
+            {
+                PengvinInstallerProc5_5.StartInfo.FileName = @"D:\DiagnoseTool_Repo\DiagnoseTool\DiagnoseTool\InstallationFiles\PengVin.Scan.dllSetup.msi";
+                PengvinInstallerProc5_5.StartInfo.Arguments = @"/q";
+
+            }
+            PengvinInstallerProc5_5.Start();
+
             label19.Visible = true;
-            label19.Text = "Reparation Slutförd";
+            label19.Text = "Steg 5 av 5...";
             
         }
 
@@ -434,19 +449,9 @@ namespace DiagnoseTool
         private void ODBCButton_Click(object sender, EventArgs e)
         {
             ODBCButton.Visible = false;
-            if (checkBox1.Checked)
-            {
-                ODBCInstallProc.StartInfo.FileName = Application.StartupPath.ToString() + @"\InstallationFiles\msodbcsql.msi";
-                ODBCInstallProc.StartInfo.Arguments = @"/quiet /i";
+            ODBCInstallProc.StartInfo.Arguments = @"/quiet /passive /qn /fp" +  Application.StartupPath.ToString() + @"\InstallationFiles\msodbcsql.msi IACCEPTMSODBCSQLLICENSETERMS=YES";
+            ODBCInstallProc.StartInfo.FileName = "msiexec";
 
-            }
-            else
-            {
-                ODBCInstallProc.StartInfo.FileName = @"D:\DiagnoseTool_Repo\DiagnoseTool\DiagnoseTool\\InstallationFiles\msodbcsql.msi";
-                ODBCInstallProc.StartInfo.Arguments = @"/quiet /i";
-
-            }
-            ODBCInstallProc.StartInfo.UseShellExecute = false;
             ODBCInstallProc.Start();
         }
 
@@ -454,6 +459,11 @@ namespace DiagnoseTool
         {
             label18.Visible = true;
             label18.Text = "Reparation Slutförd";
+        }
+
+        private void PengvinInstallerProc5_5_Exited(object sender, EventArgs e)
+        {
+            label19.Text = "Reparation Slutförd";
         }
     }
 }
